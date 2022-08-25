@@ -1,16 +1,18 @@
 //let res = document.querySelector("div#res");
 
 function formulario() {
-    const form = document.querySelector("#form");
+    const form = document.querySelector(".form");
 
     function eventoForm(evento) {
         evento.preventDefault();
-        const nome = form.querySelector("#nome");
-        const sobrenome = form.querySelector("#sobrenome");
-        const peso = form.querySelector("#peso");
-        const altura = form.querySelector("#altura");
+        const nome = form.querySelector(".nome");
+        const sobrenome = form.querySelector(".sobrenome");
+        const peso = form.querySelector(".peso");
+        const altura = form.querySelector(".altura");
+
+        console.log(nome.value, sobrenome, peso, altura);
     }
-    form.addEventeListener("submit", eventoForm);
+    form.addEventListener("submit", eventoForm);
 }
 
 formulario();
