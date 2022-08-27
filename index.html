@@ -5,31 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Usuários</title>
+    <title>Exercicio</title>
 </head>
 <header>
-    <h1>Alocando usuários</h1>
+    <h1>Formulário de Clientes</h1>
 </header>
 
 <body>
-    <section>
-        <form class="form" action="" method="get">
-            <p>Nome: <input type="text" name="nome" id="nome"></p>
-            <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
-            <p>Peso: <input type="number" name="peso" id="peso" min="1"></p>
-            <p>Altura: <input type="number" name="altura" id="altura" min="1"></p>
-            <input type="button" value="Enviar" onclick="formulario()">
-        </form>
-        <div id="res">
-            <p>Aqui sua resposta!</p>
-            <select name="lista" id="lista"></select>
+    <form class="form" action="" method="get">
+        <p>Nome: <input type="text" name="nome" class="nome"></p>
+        <p>Sobrenome: <input type="text" name="sobrenome" class="sobrenome"></p>
+        <p>RG: <input type="text" name="rg" class="rg"></p>
+        <p>CPF: <input type="text" name="cpf" class="cpf"></p>
+        <button>Enviar</button>
+    </form>
+    <div id="res"></div>
 
-        </div>
-    </section>
-    <footer>
-
-    </footer>
     <script src="script.js"></script>
 </body>
 

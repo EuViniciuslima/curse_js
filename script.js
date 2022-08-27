@@ -1,44 +1,27 @@
-//let res = document.querySelector("div#res");
-
 function formulario() {
     const form = document.querySelector(".form");
+    const res = document.querySelector("div#res");
+    const usu = [];
 
     function eventoForm(evento) {
         evento.preventDefault();
         const nome = form.querySelector(".nome");
         const sobrenome = form.querySelector(".sobrenome");
-        const peso = form.querySelector(".peso");
-        const altura = form.querySelector(".altura");
+        const rg = form.querySelector(".rg");
+        const cpf = form.querySelector(".cpf");
 
-        console.log(nome.value, sobrenome, peso, altura);
+        usu.push({
+            nome: nome.value,
+            sobrenome: sobrenome.value,
+            rg: rg.value,
+            cpf: cpf.value
+        });
+
+        console.log(usu);
+        res.innerHTML += `<p>Nome: ${nome.value} Sobrenome: ${sobrenome.value} RG: ${rg.value} CPF: ${cpf.value}</p>`;
     }
+
     form.addEventListener("submit", eventoForm);
+    window.alert('enviado!')
 }
-
 formulario();
-
-
-
-
-
-
-
-
-
-/*function criaUsu(nome, sobrenome, peso, altura) {
-    return [{nome, sobrenome, peso, altura}];
-}
-
-
-function adicionar() {
-    if ((nome.length == null) && (sobrenome.length == null) && (Number(peso.value) <= 0) && (Number(altura.value) <= 0)) {
-        window.alert("[ERROR] Preencha todos os campos!")
-    } else {
-        this.nome = nome.length;
-        this.sobrenome = sobrenome.length;
-        this.peso = Number(peso.value);
-        this.altura = Number(altura.value);
-    }
-}
-
-    //let dados = [{nome, sobrenome, peso, altura}]*/
