@@ -22,12 +22,22 @@ header h1 {
     text-align: center;
 }
 
+.imc {
+    max-height: 50px;
+}
+
 .container {
     max-width: 640px;
     margin: 50px auto;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
+}
+
+.resultado {
+    display: flex;
+    margin-left: 18rem;
+
 }
 
 form input,
