@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: rgb(57, 145, 137);
-    --primary-color-second: rgb(255, 66, 255);
+    --primary-color-second: rgb(248, 170, 52);
 }
 
 * {
@@ -33,8 +33,12 @@ header h1 {
 .text {
     display: flex;
     justify-content: space-between;
-    line-height: 45px;
+    line-height: 37px;
+}
 
+.resp {
+    background: rgb(73, 255, 179);
+    border-radius: 3px;
 }
 
 form input,
@@ -65,6 +69,7 @@ form button {
     height: 50px;
     cursor: pointer;
     margin-top: 30px;
+    border-radius: 3px;
 }
 
 form button:hover {
